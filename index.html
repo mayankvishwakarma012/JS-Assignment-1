@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator using js...</title>
+</head>
+
+<body>
+    <form id="calculator">
+        <!-- for taking first value as input. -->
+        <label for="first-value">Enter First value : </label>
+        <input type="number" name="first-value" id="number-1">
+
+        <br><br>
+
+        <!-- for selection of operator. -->
+        <label for="operator">Select Operator : </label>
+        <select name="operator" id="operator">
+            <option value="">--Make a choice--</option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="p">Power</option>
+        </select>
+
+        <br><br>
+
+        <!-- for taking second value as input. -->
+        <label for="second-value">Enter Second value : </label>
+        <input type="number" name="second-value" id="number-2">
+
+        <br><br>
+
+        <!-- to calculate answer or to trigger calculate function. -->
+        <button onclick="calculate(event)">calculate </button>
+
+        <!-- to  reset all the values.  -->
+        <button onclick="reset(event)">Reset </button>
+
+
+        <br><br>
+
+        <!-- textbox to show the answer.  -->
+        <label for="answer">Answer is : </label>
+        <input type="number" name="answer" id="answer" readonly>
+
+    </form>
+
+    <br><br>
+
+    <!-- to show the error or warnings. -->
+    <p id="error"></p>
+
+    <!-- script file added.  -->
+    <script src="script.js"></script>
+</body>
+
+</html>
